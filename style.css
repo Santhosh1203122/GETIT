@@ -59,10 +59,10 @@
     font-family: headerfont;
 }
 #aboutus{
-  background: url(./home.jpg) no-repeat center center ;
+  background: url(./home.jpg) no-repeat center center fixed ;
 }
 #about{
-  background: url(./skills.jpg) no-repeat center center ;
+  background: url(./skills.jpg) no-repeat center center fixed ;
 }
 #aboutus, #about {
 
@@ -94,6 +94,20 @@
     font-family: lightfont;
     font-size:1.5em;
     color: #4d5766;
+}
+.navbar-button{
+    width:12%;
+    margin-top:1vh;
+     border-radius:30px;
+     background-color:transparent;
+     border-color: #868080;
+     margin-right: 2%;
+    float: right !important;
+}
+
+.navbar-content{
+   height: 100%;
+   width:85%;
 }
 .home-content-header{
     width: 80vw;
