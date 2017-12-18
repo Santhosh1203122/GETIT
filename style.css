@@ -57,7 +57,10 @@
     font-size: 25px;
     position: fixed;
     font-family: headerfont;
+   
+
 }
+
 #aboutus{
   background: url(./home.jpg) no-repeat center center fixed ;
 }
@@ -100,7 +103,7 @@
     margin-top:1vh;
      border-radius:30px;
      background-color:transparent;
-     border-color: #868080;
+     border-color: #86808030;
      margin-right: 2%;
     float: right !important;
 }
@@ -108,6 +111,8 @@
 .navbar-content{
    height: 100%;
    width:85%;
+  
+       
 }
 .home-content-header{
     width: 80vw;
