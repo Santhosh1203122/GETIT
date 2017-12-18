@@ -1,5 +1,13 @@
-body {
-  overflow-x: hidden;
+
+@font-face {
+    font-family: 'lightfont';
+    src: url('./Light.woff2');
+  
+}
+@font-face {
+    font-family: 'headerfont';
+    src: url('./Ultralight.woff2');
+  
 }
 
 * {
@@ -17,46 +25,79 @@ body {
     }
 
 .img-holder{
-  height: 100vh;
+
+    
+    /* background-color: rgba(195, 178, 178, 0.26); */
+    /* background-blend-mode: lighten; */
+    background: url(./img.jpg) no-repeat center center fixed;
+    display: table;
+    height: 100vh;
+    
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+
+    
+    
+}
+.navbarheader {
+  z-index: 999;
+ 
+    
+   color:#4d5766;
     width: 100vw;
-    position: relative;
-     /*top: 35vh; 
-    left: 35vw;*/
-    opacity: 0.8;
-    background: url(./home.jpg) no-repeat center center;
-    background-size: contain;
+   
+    /*margin: 0 1vw;*/
+    padding: 0;
+    list-style: none;
+    font-size: 25px;
+    position: fixed;
+    font-family: headerfont;
 }
-.img-holders{
-  height: 30vh;
+#aboutus{
+  background: url(./home.jpg) no-repeat center center ;
+}
+#about{
+  background: url(./skills.jpg) no-repeat center center ;
+}
+#aboutus, #about {
+
+    
+    /* background-color: rgba(195, 178, 178, 0.26); */
+    /* background-blend-mode: lighten; */
+    
+    display: table;
+    height: 100vh;
+
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+
+    
+    
+}
+.home-content{
+   width: 80vw;
+    height: 30vh;
+    margin-top: 20vh;
+    margin-left: 10vw;
     /* width: 50vw; */
-    position: relative;
-    top: 20vh;
-    left: 15vw;
-    background: url(./logo21.png) no-repeat;
-    background-size: contain;
+    text-align: center;
+    font-family: lightfont;
+    font-size:1.5em;
+    color: #4d5766;
 }
-.img-holderss{
-  height: 30vh;
-    /* width: 50vw; */
-    position: relative;
-    top: 20vh;
-    left: 15vw;
-    text-align: left
-}
-.img-holder1{
-  height: 20vh;
-    width: 15vw;
-    position:relative;
-    top: 45vh;
-    left: 5vw;
-    background: url('./ipad.png') no-repeat center center;
-    background-size: contain;
-}
-.img-holder2{
-  height: 20vh;
-    /* width: 15vw; */
-    position: relative;
-    left: 30%;
-    background: url(./mobile.png) no-repeat center center;
+.home-content-header{
+    width: 80vw;
+    height: 30vh;
+    background: url(./logo-m6.png) no-repeat;
     background-size: contain;
 }
