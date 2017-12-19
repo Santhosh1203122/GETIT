@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'lightfont';
     src: url('./Light.woff2');
@@ -101,18 +100,23 @@
 .navbar-button{
     width:12%;
     margin-top:1vh;
-     border-radius:30px;
+     /*border-radius:30px;*/
      background-color:transparent;
-     border-color: #86808030;
+     border: none;
+     border-right: initial;
+     border-color: #ffe5e56e;
+     color : #e7dcdc;
      margin-right: 2%;
     float: right !important;
 }
-
 .navbar-content{
    height: 100%;
    width:85%;
   
        
+}
+.btn:focus{
+    outline: none;
 }
 .home-content-header{
     width: 80vw;
