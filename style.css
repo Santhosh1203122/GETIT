@@ -102,9 +102,9 @@
     margin-top:1vh;
      /*border-radius:30px;*/
      background-color:transparent;
-     border: none;
-     border-right: initial;
-     border-color: #ffe5e56e;
+/*      border: none;
+     border-right: initial;*/
+     border-color: black; 
      color : #e7dcdc;
      margin-right: 2%;
     float: right !important;
