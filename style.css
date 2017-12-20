@@ -8,10 +8,13 @@
     src: url('./Ultralight.woff2');
   
 }
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+html,body
+{
+    width: 100%;
+    
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
 .card-title{
