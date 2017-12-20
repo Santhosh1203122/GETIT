@@ -98,14 +98,14 @@
     color: #4d5766;
 }
 .navbar-button{
-    width:12%;
+      width:12%;
     margin-top:1vh;
-     border-radius:30px;
+     /*border-radius:30px;*/
      background-color:transparent;
-   border: none;
-     /*border-right: initial;*/
-/*      border-color: black; 
-     color : black; */
+     border: none;
+     border-right: initial;
+     border-color: #ffe5e56e;
+     color : #e7dcdc;
      margin-right: 2%;
     float: right !important;
 }
@@ -123,4 +123,42 @@
     height: 30vh;
     background: url(./logo-m6.png) no-repeat;
     background-size: contain;
+}
+@media only screen and (max-device-width: 1024px) {
+    #aboutus{
+        background: url(./home.jpg) no-repeat center center  ;
+    }
+    #work{
+        background: url(./skills.jpg) no-repeat center center ;
+    }
+}
+
+#aboutus, #work {
+
+    
+    /* background-color: rgba(195, 178, 178, 0.26); */
+    /* background-blend-mode: lighten; */
+    
+    display: table;
+    height: 100vh;
+
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.circle {
+    height: 20vh;
+    text-align: center;
+    font-family: lightfont;
+    font-size: 20px;    
+    border: 1px solid #a9a3a352;
+    box-shadow:9px 7px 16px -6px #888888;
+    -moz-box-shadow: 9px 7px 16px -6px #888888;
+    -webkit-box-shadow: 9px 7px 16px -6px #888888;
+    -o-box-shadow:9px 7px 16px -6px #888888;
+    background-color:white;
 }
