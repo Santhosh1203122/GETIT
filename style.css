@@ -8,6 +8,12 @@
     src: url('./Ultralight.woff2');
   
 }
+
+/** {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}*/
+
 html,body
 {
     width: 100%;
@@ -17,35 +23,16 @@ html,body
     overflow-x: hidden; 
 }
 
-.card-title{
-        position: absolute;
-        top: 36%;
-        font-size: 2.0em;
-        width: 100%;
-        font-weight: bold;
-        color: rgba(0, 0, 0, 0.8);
-    }
-
-.img-holder{
-
-    
-    /* background-color: rgba(195, 178, 178, 0.26); */
-    /* background-blend-mode: lighten; */
-    background: url(./img.jpg) no-repeat center center fixed;
-    display: table;
-    height: 100vh;
-    
-    position: relative;
-    width: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-
-    
-    
+.row {
+    margin: 0;
 }
+
+
+
+
+    
+    
+
 .navbarheader {
   z-index: 999;
  
@@ -63,32 +50,21 @@ html,body
 
 }
 
-#aboutus{
-  background: url(./home.jpg) no-repeat center center fixed ;
-}
-#about{
-  background: url(./skills.jpg) no-repeat center center fixed ;
-}
-#aboutus, #about {
+.intro{
 
     
     /* background-color: rgba(195, 178, 178, 0.26); */
     /* background-blend-mode: lighten; */
-    
-    display: table;
-    height: 100vh;
-
-    position: relative;
-    width: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-
-    
-    
+    background: url(./intro.jpg) no-repeat center center fixed;
 }
+
+#aboutus{
+  background: url(./home.jpg) no-repeat center center fixed ;
+}
+#work{
+  background: url(./skills.jpg) no-repeat center center ;
+}
+
 .home-content{
    width: 80vw;
     height: 30vh;
@@ -101,7 +77,7 @@ html,body
     color: #4d5766;
 }
 .navbar-button{
-      width:12%;
+    width:12%;
     margin-top:1vh;
      /*border-radius:30px;*/
      background-color:transparent;
@@ -127,16 +103,77 @@ html,body
     background: url(./logo-m6.png) no-repeat;
     background-size: contain;
 }
+
+@media only screen and (max-device-width: 1440px) {
+    .intro{
+        background: url(./intro-md.jpg) no-repeat center center fixed;
+      
+    }
+}
 @media only screen and (max-device-width: 1024px) {
+    .intro{
+        background: url(./intro-md-1.jpg) no-repeat center center fixed;
+      
+    }
     #aboutus{
         background: url(./home.jpg) no-repeat center center  ;
+        
+    }
+    #work{
+        background: url(./skills.jpg) no-repeat center center ;
+    }
+}
+@media only screen and (max-device-width: 768px) {
+    .intro{
+        background: url(./intro-sm.jpg) no-repeat center center fixed;
+      
+    }
+    #aboutus{
+        background: url(./home.jpg) no-repeat center center  ;
+        
     }
     #work{
         background: url(./skills.jpg) no-repeat center center ;
     }
 }
 
-#aboutus, #work {
+@media only screen and (max-device-width: 440px) {
+    .intro{
+        background: url(./intro-mobile.jpg) no-repeat center center fixed;
+      
+    }
+    #aboutus{
+        background: url(./home.jpg) no-repeat center center  ;
+        
+    }
+    #work{
+        background: url(./skills.jpg) no-repeat center center ;
+    }
+}
+/*
+@media only screen and (max-device-width: 380px) {
+    .intro{
+        background: url(./intro-mob1.jpg) no-repeat center center fixed;
+      
+    }
+    #aboutus{
+        background: url(./home.jpg) no-repeat center center  ;
+        
+    }
+    #work{
+        background: url(./skills.jpg) no-repeat center center ;
+    }
+}*/
+
+/*ipad pro*/
+@media only screen and (device-width: 1024px) and (device-height:1366px) {
+     .intro{
+        background: url(./ipadpro.jpg) no-repeat center center ;
+      
+    }
+
+}
+#aboutus, #work,.intro {
 
     
     /* background-color: rgba(195, 178, 178, 0.26); */
@@ -146,7 +183,7 @@ html,body
     height: 100vh;
 
     position: relative;
-    width: 100%;
+    width: 100vw;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -165,3 +202,4 @@ html,body
     -o-box-shadow:9px 7px 16px -6px #888888;
     background-color:white;
 }
+
