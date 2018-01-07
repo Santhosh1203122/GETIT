@@ -1,205 +1,359 @@
 @font-face {
-    font-family: 'lightfont';
-    src: url('./Light.woff2');
-  
+	font-family: 'lightfont';
+	src: url('./Light.woff2');
 }
 @font-face {
-    font-family: 'headerfont';
-    src: url('./Ultralight.woff2');
-  
+	font-family: 'varela';
+	src: url('./Varela-Regular.ttf');
 }
 
-/** {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}*/
+@font-face {
+	font-family: 'headerfont';
+	src: url('./Ultralight.woff2');
+}
 
-html,body
-{
-    width: 100%;
-    
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+html,
+body {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
 }
 
 .row {
-    margin: 0;
+	margin: 0;
 }
-
-
-
-
-    
-    
 
 .navbarheader {
-  z-index: 999;
- 
-    
-   color:#4d5766;
-    width: 100vw;
-   
-    /*margin: 0 1vw;*/
-    padding: 0;
-    list-style: none;
-    font-size: 25px;
-    position: fixed;
-    font-family: headerfont;
-   
-
+	z-index: 999;
+	color: #4d5766;
+	width: 100vw;
+	/*margin: 0 1vw;*/
+	padding: 0;
+	list-style: none;
+	font-size: 25px;
+	position: fixed;
+	font-family: headerfont;
 }
 
-.intro{
-
-    
-    /* background-color: rgba(195, 178, 178, 0.26); */
-    /* background-blend-mode: lighten; */
-    background: url(./intro.jpg) no-repeat center center fixed;
+.intro {
+	background: url(./intro.jpg) no-repeat center center fixed;
 }
 
-#aboutus{
-  background: url(./home.jpg) no-repeat center center fixed ;
-}
-#work{
-  background: url(./skills.jpg) no-repeat center center ;
+#services {
+	background: url(./home.jpg) no-repeat center center fixed;
 }
 
-.home-content{
-   width: 80vw;
-    height: 30vh;
-    margin-top: 20vh;
-    margin-left: 10vw;
-    /* width: 50vw; */
-    text-align: center;
-    font-family: lightfont;
-    font-size:1.5em;
-    color: #4d5766;
+#product {
+	background: url(./product3.jpg) no-repeat center center ;
 }
-.navbar-button{
-    width:12%;
-    margin-top:1vh;
-     /*border-radius:30px;*/
-     background-color:transparent;
-     border: none;
-     border-right: initial;
-     border-color: #ffe5e56e;
-     color : #e7dcdc;
-     margin-right: 2%;
-    float: right !important;
+
+#int {
+	background: black no-repeat center center fixed;
 }
-.navbar-content{
-   height: 100%;
-   width:85%;
-  
-       
+
+.home-content {
+	width: 80vw;
+	height: 30vh;
+	margin-top: 20vh;
+	margin-left: 10vw;
+	/* width: 50vw; */
+	text-align: center;
+	font-family: lightfont;
+	font-size: 1.5em;
+	color: #4d5766;
 }
-.btn:focus{
-    outline: none;
+
+.navbar-button {
+	width: 12%;
+	margin-top: 1vh;
+	background-color: transparent;
+	border: none;
+	border-right: initial;
+	border-color: #ffe5e56e;
+	color: #e7dcdc;
+	margin-right: 2%;
+	float: right !important;
 }
-.home-content-header{
-    width: 80vw;
-    height: 30vh;
-    background: url(./logo-m6.png) no-repeat;
-    background-size: contain;
+
+.navbar-content {
+	height: 100%;
+	width: 85%;
 }
+
+.btn:focus {
+	outline: none;
+}
+
+.home-content-header {
+	width: 80vw;
+	height: 30vh;
+	background: url(./logo-m6.png) no-repeat;
+	background-size: contain;
+}
+
+
+
+.aboutbutton-header {
+	margin-top: 10%;
+	height: 50%;
+	visibility: initial;
+	opacity: 1;
+	transition: all 0.6s;
+}
+
+.aboutbutton-header img {
+	height: 100%;
+	/*margin-left:15%;*/
+}
+
+.about-header-title {
+	height: 25%;
+	padding-top: 3%;
+	color: #505052;
+	transition: all 0.6s;
+}
+
+
+/*animation for about section buttons sliding */
+
+.circle:hover .aboutbutton-header {
+	transform: translateY(-100px);
+	-webkit-transform: translateY(-100px);
+	visibility: hidden;
+	opacity: 0;
+}
+
+.circle:hover .about-header-title {
+	transform: translateY(100px);
+	-webkit-transform: translateY(100px);
+	visibility: hidden;
+	opacity: 0;
+}
+
+.about-content {
+	visibility: hidden;
+	margin-top: -55%;
+	opacity: 0;
+	padding: 5%;
+	transition: all 0.6s;
+}
+
+.circle:hover .about-content {
+	visibility: visible;
+	opacity: 1;
+}
+#prod-info{
+	height:100vh;
+}
+
+/*end of animation*/
+
+
+/*For laptop */
 
 @media only screen and (max-device-width: 1440px) {
-    .intro{
-        background: url(./intro-md.jpg) no-repeat center center fixed;
-      
-    }
+	.intro {
+		background: url(./intro-md.jpg) no-repeat center center fixed;
+	}
+	#services {
+		background: url(./home-md.jpg) no-repeat center center fixed;
+	}
 }
+
+
+/*For tab*/
+
 @media only screen and (max-device-width: 1024px) {
-    .intro{
-        background: url(./intro-md-1.jpg) no-repeat center center fixed;
-      
-    }
-    #aboutus{
-        background: url(./home.jpg) no-repeat center center  ;
-        
-    }
-    #work{
-        background: url(./skills.jpg) no-repeat center center ;
-    }
+	.intro {
+		background: url(./intro-md-1.jpg) no-repeat center center fixed;
+	}
+	#services {
+		background: url(./home-md-1.jpg) no-repeat center center fixed;
+	}
+	#product {
+		background: url(./product3.jpg) no-repeat center center ;
+	}
+	#services-content {
+		margin-top: -95%;
+		font-size: 1.5em;
+	}
+	#prod-info{
+		height: 80vh;
+		margin-top: 5vh
+	}
+	#prod-hd {
+		text-align: center;
+	}
 }
+
 @media only screen and (max-device-width: 768px) {
-    .intro{
-        background: url(./intro-sm.jpg) no-repeat center center fixed;
-      
-    }
-    #aboutus{
-        background: url(./home.jpg) no-repeat center center  ;
-        
-    }
-    #work{
-        background: url(./skills.jpg) no-repeat center center ;
-    }
+	.intro {
+		background: url(./intro-sm.jpg) no-repeat center center fixed;
+	}
+	#services {
+		background: url(./home-sm.jpg) no-repeat center center ;
+	}
+	#product {
+		background: url(./product-sm.jpg) no-repeat center center;
+	}
+	.about-content {
+		margin-top: -70%;
+		font-size: 1.5em;
+	}
 }
 
 @media only screen and (max-device-width: 440px) {
-    .intro{
-        background: url(./intro-mobile.jpg) no-repeat center center fixed;
-      
-    }
-    #aboutus{
-        background: url(./home.jpg) no-repeat center center  ;
-        
-    }
-    #work{
-        background: url(./skills.jpg) no-repeat center center ;
-    }
+	.intro {
+		background: url(./intro-mobile.jpg) no-repeat center center fixed;
+	}
+	#services {
+		background: url(./home-mobile.jpg) no-repeat center center;
+	}
+	#product {
+		background: url(./product-mobile.jpg) no-repeat center center;
+	}
+	.about-content {
+		margin-top: -80%;
+		font-size: 1.5em;
+	}
+	
+	.prod-data{
+		font-size:1.3em;
+	}
 }
-/*
-@media only screen and (max-device-width: 380px) {
-    .intro{
-        background: url(./intro-mob1.jpg) no-repeat center center fixed;
-      
-    }
-    #aboutus{
-        background: url(./home.jpg) no-repeat center center  ;
-        
-    }
-    #work{
-        background: url(./skills.jpg) no-repeat center center ;
-    }
-}*/
+
 
 /*ipad pro*/
-@media only screen and (device-width: 1024px) and (device-height:1366px) {
-     .intro{
-        background: url(./ipadpro.jpg) no-repeat center center ;
-      
-    }
 
+@media only screen and (device-width: 1024px) and (device-height: 1366px) {
+	.intro {
+		background: url(./ipadpro.jpg) no-repeat center center;
+	}
+	#services {
+		background: url(./homeipadpro.jpg) no-repeat center center;
+	}
+	#product {
+		background: url(./productipadpro.jpg) no-repeat center center;
+	}
 }
-#aboutus, #work,.intro {
 
-    
-    /* background-color: rgba(195, 178, 178, 0.26); */
-    /* background-blend-mode: lighten; */
-    
-    display: table;
-    height: 100vh;
+@media only screen and (max-device-width: 1024px) {
+	.navbar-button {
+		width: 13%;
+		height: 50%;
+		font-size: 1em;
+	}
+	.aboutbutton-header {
+		margin-top: 15%;
+		height: 50%;
+		width: 100%;
+	}
+	.about-header-title {
+		font-size: 1.3em;
+	}
+}
 
-    position: relative;
-    width: 100vw;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+#services,
+#product,
+.intro,
+
+#aboutus,
+#contact,
+#int {
+	display: table;
+	height: 100vh;
+	position: relative;
+	width: 100vw;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#contact,#aboutus {
+	height: 50vh;
+	background: black
 }
 
 .circle {
-    height: 20vh;
-    text-align: center;
-    font-family: lightfont;
-    font-size: 20px;    
-    border: 1px solid #a9a3a352;
-    box-shadow:9px 7px 16px -6px #888888;
-    -moz-box-shadow: 9px 7px 16px -6px #888888;
-    -webkit-box-shadow: 9px 7px 16px -6px #888888;
-    -o-box-shadow:9px 7px 16px -6px #888888;
-    background-color:white;
+	height: 23vh;
+	text-align: center;
+	font-family: lightfont;
+	padding: 0;
+	display: inline-block;
+	border: 1px solid #a9a3a352;
+	overflow-y: hidden;
+	box-shadow: 9px 7px 16px -6px #888888;
+	-moz-box-shadow: 9px 7px 16px -6px #888888;
+	-webkit-box-shadow: 9px 7px 16px -6px #888888;
+	-o-box-shadow: 9px 7px 16px -6px #888888;
+	background-color: #ffffffc1;
+	box-sizing: inherit;
 }
 
+.curved-box{
+	height: 100%;
+	font-family: varela;
+	font-size: 0.9em;
+	text-align: center;
+    /*margin-top: 10%;*/
+    /*background-color: #f2f2f296;*/
+    /*box-shadow: 9px 7px 16px #cecece;*/
+    border-radius: 0px 13px 13px 0px;
+	
+}
+.border-block{
+	  /*margin-top: 14%;  */
+    height: 100%;
+    /* padding-left: 42%; */
+    margin-left: 42%;
+    width: 15%;
+    background: #d3d1d1;
+    /*box-shadow: 4px 7px 12px #cecece;*/
+}
+.prod-header{
+	height: 25%;
+	width: 100%;
+	background: #c3ac66;
+	position: relative;
+	box-shadow: 0px 2px 4px #828282;
+	border-radius:   13px 0px 0px 13px ;
+	display: inline-block
+}
+.prod-data{
+	height: 100%;
+	width: 90%;
+	margin-left:5%;
+	padding-top:10%;
+	background-color: #f2f2f2;
+	border-radius:  0px 0px 15px 15px;
+	box-shadow: 9px 7px 16px #cecece;
+}
+
+.prod-tri-ri,.prod-tri-lf{
+	width: 0;	
+	height: 0;	
+	border-top: 10px solid #78652b;	
+}
+.prod-tri-ri{
+	
+	border-right: 10px solid transparent;
+}
+.prod-tri-lf{
+	border-left: 10px solid transparent;
+}
+
+#product-ref:hover {
+	text-decoration: none;
+}
+.service-header { 
+    color: #3B5957;
+	font-weight: bolder;
+	background: 	;
+	width: fit-content;
+	font-size: 30px;
+    height: 100%;
+	box-shadow: 9px 7px 16px -6px #888888;
+	text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
+}
