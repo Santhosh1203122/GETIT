@@ -51,6 +51,9 @@ body {
 #int {
 	background: black no-repeat center center fixed;
 }
+/*#aboutus {
+	background: url(./aboutus.jpg) no-repeat center center fixed;
+}*/
 
 .home-content {
 	width: 80vw;
@@ -92,7 +95,9 @@ body {
 	background-size: contain;
 }
 
-
+.intro {
+	background: url(./home.jpg) no-repeat center center fixed;
+}
 
 .aboutbutton-header {
 	margin-top: 10%;
@@ -114,6 +119,15 @@ body {
 	transition: all 0.6s;
 }
 
+/* creation SVG class*/
+
+.about-us, .creation {
+	height: 95vh; 
+	width: 50vw;
+}
+.about-us-content {
+	display: flex;
+}
 
 /*animation for about section buttons sliding */
 
@@ -146,6 +160,9 @@ body {
 #prod-info{
 	height:100vh;
 }
+.intro-slogan{
+	width: 40%;
+}
 
 /*end of animation*/
 
@@ -168,6 +185,9 @@ body {
 	.intro {
 		background: url(./intro-md-1.jpg) no-repeat center center fixed;
 	}
+	#aboutus{
+		height: fit-content;
+	}
 	#services {
 		background: url(./home-md-1.jpg) no-repeat center center fixed;
 	}
@@ -185,6 +205,28 @@ body {
 	#prod-hd {
 		text-align: center;
 	}
+	.home-content-header{
+		height: 25vh;
+	}
+	.home-content{
+		margin-left: 17vw;
+		width: 70vw;
+	}
+	.intro-slogan{
+		width: 100%;
+		font-size: 1.5em
+	}
+	.about-us{
+		width: 100vw;
+		height: 30vh;
+	}
+	.creation{
+		width: 100vw;	
+		height: unset;	
+	}
+	.about-us-content{
+		display: inherit;
+	}
 }
 
 @media only screen and (max-device-width: 768px) {
@@ -196,6 +238,9 @@ body {
 	}
 	#product {
 		background: url(./product-sm.jpg) no-repeat center center;
+	}
+	#aboutus{
+		height: fit-content;
 	}
 	.about-content {
 		margin-top: -70%;
@@ -210,6 +255,9 @@ body {
 	#services {
 		background: url(./home-mobile.jpg) no-repeat center center;
 	}
+	#aboutus{
+		height: fit-content;
+	}
 	#product {
 		background: url(./product-mobile.jpg) no-repeat center center;
 	}
@@ -220,6 +268,15 @@ body {
 	
 	.prod-data{
 		font-size:1.3em;
+	}
+	.home-content{
+		margin-left: 10vw;
+		width:80vw; 
+	}
+	.intro-slogan{
+		width: 100%;
+		font-size: 1.8em;
+
 	}
 }
 
@@ -257,7 +314,6 @@ body {
 #services,
 #product,
 .intro,
-
 #aboutus,
 #contact,
 #int {
@@ -271,7 +327,7 @@ body {
 	background-size: cover;
 }
 
-#contact,#aboutus {
+#contact {
 	height: 50vh;
 	background: black
 }
@@ -282,14 +338,16 @@ body {
 	font-family: lightfont;
 	padding: 0;
 	display: inline-block;
-	border: 1px solid #a9a3a352;
+	border: 1px solid #e2ddd8;
 	overflow-y: hidden;
-	box-shadow: 9px 7px 16px -6px #888888;
-	-moz-box-shadow: 9px 7px 16px -6px #888888;
-	-webkit-box-shadow: 9px 7px 16px -6px #888888;
-	-o-box-shadow: 9px 7px 16px -6px #888888;
-	background-color: #ffffffc1;
+	overflow-x: hidden;
+	box-shadow: 9px 7px 16px -6px #676464;
+	-moz-box-shadow: 9px 7px 16px -6px #676464;
+	-webkit-box-shadow: 9px 7px 16px -6px #676464;
+	-o-box-shadow: 9px 7px 16px -6px #676464;
+	background-color: hsla(31, 80%, 92%, 0.7019607843137254);
 	box-sizing: inherit;
+	border-radius:  20px 20px 20px 20px;
 }
 
 .curved-box{
@@ -350,7 +408,7 @@ body {
 .service-header { 
     color: #3B5957;
 	font-weight: bolder;
-	background: #bf926b	;
+	background: #bf926b;
 	width: fit-content;
 	font-size: 30px;
     height: 100%;

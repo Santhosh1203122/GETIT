@@ -1,0 +1,7 @@
+/*custom aos animation*/
+[data-aos="example-anim1"] {
+  background-color: initial;
+  &.aos-animate {
+    background-color: white;
+  }
+}
